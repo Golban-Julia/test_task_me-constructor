@@ -55,7 +55,7 @@ h2 {
 }
 
 body {
-  background: radial-gradient(circle, rgb(178, 208, 255) 0%, rgba(255, 255, 255, 0.9192927171) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9192927171) 13%, rgb(178, 208, 255) 95%);
 }
 
 .container {
@@ -81,6 +81,15 @@ a {
   cursor: pointer;
 }
 
+.header {
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #b2d0ff;
+}
 .header .navbar-light .navbar-toggler {
   border-color: transparent;
   box-shadow: none;
@@ -94,18 +103,21 @@ a {
   border-radius: 4px;
   font-size: 16px;
   box-shadow: none;
+  color: white;
+  background-color: #2C6ED5;
 }
 .header .navbar-nav .btn {
   padding: 9px 24px;
-}
-.header .navbar-nav .nav-item .nav-link {
-  color: #2C6ED5;
 }
 .header .navbar-nav .nav-item li a {
   color: #2C6ED5;
 }
 .header__login {
   padding: 10px;
+}
+.header #navbarNavDropdown .show {
+  background-color: white;
+  padding: 20px;
 }
 
 @media (max-width: 768px) {
