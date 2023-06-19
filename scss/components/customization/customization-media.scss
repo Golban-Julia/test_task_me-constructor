@@ -1,0 +1,31 @@
+.customization{
+    @include desktop-lg(){
+        margin-bottom: 48px;
+        h4{
+            font-size: $font-xs;
+        }
+        h2{
+            font-size: $font-lg;
+        }
+        &__title{
+            margin-bottom: 48px;
+        }
+        &__description{
+            flex-direction: column;
+            gap:24px;
+            &__img , &__text{
+                max-width: calc(100% - 24px );
+            }
+            &__img {
+                height: 252px;
+            }
+            &__text{
+                text-align: center;
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

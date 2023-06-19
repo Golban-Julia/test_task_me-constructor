@@ -1,0 +1,32 @@
+.questions{
+    @include desktop-xl{
+        margin-bottom: 48px;
+        .row{
+            gap: 24px;
+        }
+        &__title{
+            h2{
+                font-size: $font-lg;
+            }
+            h4{
+                font-size: $font-xs;
+            }
+            p{
+                display:none;
+            }
+        }
+        &__content{
+            flex-direction: column-reverse;
+            gap:24px;
+
+            &__accordion{
+                max-width: 100%;
+                
+            }
+            &__img{
+                height: 295px;
+                max-width: 100%;
+            }
+        }
+    }
+}

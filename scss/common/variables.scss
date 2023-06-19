@@ -1,0 +1,27 @@
+$content-width: 1326px;
+
+$main-font-color:#8B929A;
+$btn-login-color:#2C6ED5;
+$main-text-color:#3E4957;
+$text-color-h4:#8FB4F1;
+$white-color:white;
+$accordion-faq-color:#4A5360;
+$accordion-button-active-color:black;
+
+$font-xxl:48px;
+$font-xl:40px;
+$font-lg:24px;
+$font-md:18px;
+$font-sm:16px;
+$font-xs:14px;
+
+.table{
+    --bs-table-accent-bg:#{$white-color};
+}
+.footer .table {
+    --bs-table-accent-bg: #353F4B;
+
+}
+
+
+

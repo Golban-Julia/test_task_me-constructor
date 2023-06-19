@@ -1,0 +1,98 @@
+.plans{
+    background-image: url("./../../../assets/vector-table.svg");
+    &__title{
+        margin-bottom: 48px;
+    }
+    &__table {
+        border: 1px solid #3E4957;
+        box-shadow: 6px 6px 0px #C0D9FF;
+        border-radius: 8px;
+        padding: 0;
+        .table{
+            margin: 0;
+
+        }
+        thead tr th{
+            border: none;
+        }
+        tbody tr td{
+            text-align: center;
+        }
+    }
+    .bd-style{
+        color: #3A83F6;
+        background: #F3F8FF;
+        border: 1px solid #3A83F6;
+        box-shadow: 2px 2px 0px #C0D9FF;
+        border-radius: 4px;
+    }
+    .badge-style{
+        background: #FFFFFF;
+        border: 1px solid #3A83F6;
+        box-shadow: 2px 2px 0px #73A9FF;
+        padding:5px 10px;
+        @extend %font-abhayaLibra-bold;
+        color: #3A83F6;
+    }
+    .table-active{
+        background-color: #3A83F6;
+        color:white;
+        text-align: center;
+        button{
+            background-color: white;
+            color:#3A83F6;
+            @extend %font-abhayaLibra-bold;
+            &:hover{
+                color:white;
+                background-color:#3A83F6;
+                border-color: white;
+            }
+        }
+    }
+    .dropdown{
+        .btn-secondary {
+            background-color: white;
+            color:$main-text-color;
+            padding: 2px;
+        }
+
+    }
+    .table__captain-top-active{
+        font-size:20px;
+        @extend %font-abhayaLibra-bold;
+        background-color: #3A83F6;
+        color:white;
+
+    }
+    .table__captain-top{
+        font-size:20px;
+        @extend %font-abhayaLibra-bold;
+    }
+    .table__captain-down{
+        font-size: $font-lg;
+        @extend %font-abhayaLibra-bold;
+    }
+    .table__captain{
+        font-size: $font-xxl;
+    }
+    .btn-outline-primary{
+        padding: 9px 112px;
+    }
+    svg{
+        path{
+            fill:white;
+        }
+    }
+    
+
+
+    &__table-first{
+        box-shadow:4px 4px 0px #C0D9FF;
+        border-radius: 4px 4px 0px 0px;
+        border:2px solid #3E4957;
+        .table{
+            margin: 0;
+        }
+    }
+    
+}

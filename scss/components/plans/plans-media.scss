@@ -1,0 +1,43 @@
+.plans{
+    @include desktop-xlm(){
+       &__table{
+        display: none;
+       }
+       .dropdown-none{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+            .btn-secondary {
+                background-color: white;
+                color:$main-text-color;
+                padding: 3px 14px;
+            }
+        }
+        .bd-style{
+            color: #3A83F6;
+            background: #F3F8FF;
+            border: 1px solid #3A83F6;
+            box-shadow: 2px 2px 0px #C0D9FF;
+            border-radius: 4px;
+        }
+        .badge-style{
+            background: #FFFFFF;
+            border: 1px solid #3A83F6;
+            box-shadow: 2px 2px 0px #73A9FF;
+            padding:5px 10px;
+            color: #3A83F6;
+        }
+    }
+
+    @include desktop-xlm-min(){
+        &__table{
+            display: block;
+           }
+        &__tables{
+            display: none;
+        }
+        .dropdown-none{
+            display:none;
+        }
+    }
+}

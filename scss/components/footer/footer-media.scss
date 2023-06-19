@@ -1,0 +1,21 @@
+.footer{
+    @include desktop-xlm{
+        font-size: $font-xs;
+        &__info{
+            gap:24px;
+            flex-direction: column;
+            margin-bottom: 48px;
+            &__description{
+                width:100%;
+            }
+            &__table{
+                width:100%;
+                thead{
+                    font-size: $font-sm;
+                }
+               
+            }
+        }
+        
+    }
+}

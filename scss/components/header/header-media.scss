@@ -1,0 +1,10 @@
+.header{
+   @include desktop-lg(){
+    .navbar{
+      &__reverse{
+         flex-direction: row-reverse;
+      }
+      } 
+   }
+
+}

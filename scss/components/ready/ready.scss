@@ -1,0 +1,50 @@
+.ready{
+    margin-bottom: 96px;
+    &__description{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 59px;
+        margin-bottom: 96px;
+
+        &__text{
+            width: 100%;
+            max-width: calc(100% / 2 - 59px);
+            h2{
+              text-align: start;
+            }
+        }
+
+        &__img{
+            width: 100%;
+            max-width: calc(100% / 2 - 59px);
+            background-image: url('./../../../assets/library.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 473px;
+        }
+    }
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p{
+            max-width: 727px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .btn{
+
+            font-size: $font-sm;
+            padding: 16px 83px ;
+            border-radius: 4px;
+            :hover, :active{
+                box-shadow: none;
+            }
+        }
+    }
+    
+}

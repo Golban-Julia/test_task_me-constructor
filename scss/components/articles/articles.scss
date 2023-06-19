@@ -1,0 +1,62 @@
+.articles{
+    margin-bottom: 60px;
+    
+
+    &__content{
+        .carousel{
+            .carousel-indicators{
+                bottom: -70px;
+            }
+            button {
+                background: #D8E6FD;
+                border-radius: 50%;
+                width:12px;
+                height: 12px;
+                border-bottom: 0;
+                border-top: 0;
+                
+            }
+            .carousel-indicators .active {
+                background: #3A83F6;
+                border-radius: 22px;
+            }
+        }
+        &__carousel{
+            display: flex;
+            gap:24px;
+
+            .card{
+                width:calc(100% / 3 - 24px);
+                background: #FFFFFF;
+                border: 1px solid #E2E9FC;
+                border-radius: 4px;
+                padding: 24px;
+
+                .card-body{
+                    h5{
+                        @extend %font-abhayaLibra-bold;
+                        font-size: $font-sm;
+                        color:$main-text-color;
+                        span{
+                            color:$main-font-color;
+                            @extend %font-abhayaLibra;
+                        }
+                    }
+                    h3{
+                        @extend %font-abhayaLibra-bold;
+                        font-size: $font-lg;
+                        text-transform: capitalize;
+                        color: $main-text-color;
+                    }
+                    p{
+                        font-size: $font-sm;
+                    }
+                    a.btn.btn-outline-primary {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+}

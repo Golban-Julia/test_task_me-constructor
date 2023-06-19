@@ -1,0 +1,29 @@
+.choose{
+    @include desktop-lx(){
+        &__content{
+            &__itemFirst, &__itemSecond{
+                max-width: 50%;
+            }
+        }
+        &__content-none{
+            display: none;
+        }
+    }
+    @include desktop-lg(){
+        .row{
+            gap:24px;
+        }
+        h2{
+            font-size: $font-lg;
+        }
+
+        &__content{
+            &__itemFirst, &__itemSecond{
+                max-width: 100%;
+                height: 262px;
+            }
+        }
+        
+    }
+   
+}

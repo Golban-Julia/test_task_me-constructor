@@ -1,0 +1,26 @@
+.mobile{
+    margin-bottom:96px ;
+
+    &__description{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 59px;
+        &__img{
+            width: 100%;
+            max-width: calc(100% / 2 - 59px );
+            background-image: url('./../../../assets/mobile.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 473px;
+        }
+        &__text{
+            width: 100%;
+            max-width: calc(100% / 2 - 59px );
+            h2{
+                text-align: start;
+            }
+        }
+    }
+}

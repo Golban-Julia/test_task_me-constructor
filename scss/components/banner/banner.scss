@@ -1,0 +1,57 @@
+.banner{
+    padding-top:80px ;
+    padding-bottom: 36px;
+    &__description{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        
+        &__title{
+            @extend %font-abhayaLibra-bold;
+            font-size:$font-xxl;
+            line-height: 67px;
+            text-align: center;
+            text-transform: capitalize;
+            color: $main-text-color;
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    &__border {
+        position: absolute;
+        top:60px;
+        svg{
+            width:100%;
+        }
+    }
+    h2{
+        color:#3A83F6;
+        padding-bottom: 15px;
+    }
+    p{
+        max-width: 500px;
+        width: 100%;
+        font-size: $font-sm;
+    }
+    .btn{
+        font-size: $font-sm;
+        padding: 16px 83px ;
+        border-radius: 4px;
+        :hover, :active{
+            box-shadow: none;
+        }
+    }
+
+    &__img{
+        background-image: url('./../../../assets/img_banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 782px;
+    }
+
+
+}
+   

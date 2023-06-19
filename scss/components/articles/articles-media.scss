@@ -1,0 +1,42 @@
+
+
+.articles{
+    @include desktop-xxl(){
+        .carousel-none{
+            display: none;
+        }
+        
+        .carousel-active .carousel-indicatorsTwo .carousel-active-btn button .active{
+            background-color: blue;
+        }
+        .articles__content .carousel-active button{
+            width: 12px;
+            height:12px;
+            background: #D8E6FD;
+            padding: 0;
+            border: none;
+        }
+        .active .carousel-active-btn{
+            width: 12px;
+            height:12px;
+            background: blue;
+            padding: 0;
+            border: none;
+        }
+        div#carouselExampleIndicatorsTwo {
+            position: relative;
+        }
+        .carousel-indicatorsTwo {
+            position: absolute;
+            bottom: -45px;
+            right: 45%;
+        }
+    }
+
+    @include desktop-lg-1-min(){
+        .carousel-active{
+            display: none;
+        }
+    }
+    
+}

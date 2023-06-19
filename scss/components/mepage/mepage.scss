@@ -1,0 +1,35 @@
+.mepage{
+    background-image: url('./../../../assets/line-mepage.svg');
+    background-color: #3A83F6;
+    padding: 70px 0;
+    &__content{
+        flex-direction: column;
+        h2{
+            color:white;
+            margin-bottom: 16px;
+            img{
+                width:187px;
+                height: 62px;
+            }
+        }
+        p{
+            color:white;
+            max-width: 1003px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .btn-light{
+            color:#3A83F6;
+            @extend %font-abhayaLibra-bold;
+            font-size: $font-sm;
+            padding: 16px 71px;
+            width: 235px;
+            &:hover{
+                background-color: #3A83F6;
+                color:white;
+            }
+        }
+    }
+    
+}

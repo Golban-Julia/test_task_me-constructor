@@ -1,0 +1,20 @@
+.result{
+    @include desktop-lx{
+        &__info__item{
+            max-width: calc(100% / 2 - 24px);
+            
+        }
+    }
+    @include desktop-xxl{
+        &__info{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @include desktop-md{
+        &__info__item{
+            max-width: 100%;
+           
+        }
+    }
+}

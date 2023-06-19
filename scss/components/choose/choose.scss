@@ -1,0 +1,47 @@
+.choose{
+    padding-top: 24px;
+    margin-bottom: 72px;
+    .row{
+        gap:48px;
+    }
+
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:24px;
+
+        &__itemFirst{
+            width: 100%;
+            max-width: calc(100% / 3 - 24px);
+            background-image: url('./../../../assets/Project.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 318px;
+        }
+        &__itemSecond{
+            width: 100%;
+            max-width: calc(100% / 3 - 24px);
+            background-image: url('./../../../assets/Project\ _1.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 318px;
+
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+    
+        button.btn.btn-outline-primary {
+            padding: 16px 45px;
+            font-family: 'Arial';
+            font-size: 16px;
+            text-align: center;
+            color: #3A83F6;
+        }
+    }
+}

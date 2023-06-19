@@ -1,0 +1,34 @@
+%font-abhayaLibra{
+    font-family: Abhaya Libre, sans-serif;
+    font-weight: normal;
+}
+%font-abhayaLibra-bold{
+    font-family: Abhaya Libre, sans-serif;
+    font-weight: bold;
+}
+
+%main-text{
+    @extend %font-abhayaLibra;
+    color: $main-font-color;
+    font-size: $font-md;
+}
+
+
+%title-h4{
+    color: $text-color-h4;
+    @extend %font-abhayaLibra-bold;
+    font-size: $font-xs;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin-bottom:16px;
+    padding: 0;
+}
+
+%title-h2{
+    @extend %font-abhayaLibra-bold;
+    font-size: $font-xl;
+    text-align: center;
+    text-transform: capitalize;
+    color: $main-text-color;
+}

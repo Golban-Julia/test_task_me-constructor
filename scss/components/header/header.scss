@@ -1,0 +1,48 @@
+.header{
+    // position: fixed;
+    // height: 80px;
+    // top:0;
+    // left: 0;
+    // z-index: 1;
+   
+    // width: 100%;
+    .navbar{
+        &-light .navbar-toggler {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        
+        &-nav{
+            gap:24px;
+
+            .btn-primary {
+                @extend %font-abhayaLibra-bold;
+                background-color: $btn-login-color;
+                border-color: $btn-login-color;
+                border-radius: 4px;
+                font-size: $font-sm;
+                box-shadow: none;
+            }
+
+            .btn {
+                padding: 9px 24px;
+            }
+        
+            .nav-item {
+                & .nav-link{
+                    color:$btn-login-color;
+                }
+            
+                & li a{
+                    color:$btn-login-color;
+                }
+        }   }
+    }
+    &__login{
+        padding: 10px;
+    }
+}
+    
+    
+    
+

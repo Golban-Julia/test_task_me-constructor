@@ -1,0 +1,84 @@
+.competitors{
+    margin-bottom: 48px;
+
+    .container{
+        background-image: url('./../../../assets/bg.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 48px;
+        gap:24px;
+    }
+    &__title{
+        margin-bottom:18px;
+    }
+    &__table-media{
+        display: none;
+    }
+    .table{
+        color:$main-text-color;
+        margin-bottom: 0;
+        td{
+            @extend %font-abhayaLibra;
+            font-size: $font-md;
+        }
+    }
+    .table__box{
+        width:calc(100% / 3 - 24px);
+        border: 1px solid $main-text-color;
+        box-shadow: 6px 6px 0px #C0D9FF;
+        border-radius: 8px;
+        padding: 24px;
+        background-color: $white-color;
+        td .icon{
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .table__box-shadow{
+        box-shadow: 6px 6px 0px #1E77FD;
+    }
+    
+    .table__first{
+        th{
+            @extend %font-abhayaLibra-bold;
+            font-size: $font-lg;
+            line-height: 120%;
+            text-transform: capitalize;
+        }
+    }
+    .table__second{
+        th{
+            padding-top: 0;
+        }
+        img{
+            width:111px;
+            height: 36px;
+        }
+    }
+    .table__third{
+        th{
+            @extend %font-abhayaLibra;
+            font-size: $font-md;
+        }
+    }
+    .table__second, .table__third{
+        text-align: center;
+    }
+    .last-tr__border{
+        border-bottom: transparent;
+    }
+
+    &__description{
+        max-width: 950px;
+        width: 100%;
+        text-align: center;
+    }
+}

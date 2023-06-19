@@ -1,0 +1,62 @@
+.questions{
+    margin-bottom: 72px;
+    .row{
+        gap:48px;
+    }
+    &__title{
+        text-align: center;
+        p{
+            margin: 0;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:104px;
+
+        &__accordion{
+            width: 100%;
+            max-width: calc(100% / 2 - 104px);
+            .accordion-item{
+                border: 1px solid #8B929A;
+                border-radius: 4px;
+                margin: 24px;
+            }
+            h2 .accordion-button{
+                color:$accordion-faq-color;
+                @extend %font-abhayaLibra-bold;
+                font-size: $font-md;
+            }
+            div#panelsStayOpen-collapseOne,
+            div#panelsStayOpen-collapseTwo,
+            div#panelsStayOpen-collapseThree,
+            div#panelsStayOpen-collapseFour {
+                border-top: 1px solid #DDE0E4;
+                margin: 10px;
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: $white-color;
+                box-shadow: none;
+            }
+            .accordion-button:focus {
+                box-shadow: none;
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: url('./../../../assets/chevron.svg')
+            }
+            .accordion-body {
+                font-size: $font-sm;
+            }
+        }
+        &__img{
+            width: 100%;
+            max-width: calc(100% / 2 - 104px);
+            background-image: url('./../../../assets/faq.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 499px;
+        }
+    }
+}

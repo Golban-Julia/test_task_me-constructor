@@ -1,0 +1,64 @@
+.competitors{
+    @include desktop-xxl(){
+        &__table-media {
+            display: none; 
+         }
+        &__table .table{
+            
+            td{
+                font-size: $font-sm;
+            }
+        }
+    }
+    @include desktop-xlg(){
+        &__table-media {
+            display: none; 
+         }
+        &__table .table{
+            
+            td{
+                font-size: $font-xs;
+            }
+        }
+    }
+    @include desktop-xlm(){
+        &__table {
+           display: none; 
+        }
+        &__table-media{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        .table__box{
+            width: 100%;
+            border: 1px solid $main-text-color;
+            border-radius: 8px;
+            padding: 24px;
+            background-color: $white-color;
+        }
+        .table th {
+            font-size: 20px;
+        }
+        .table td {
+            font-size: $font-xs;
+        }
+        img{
+            width:86px;
+            height: 28px;
+        }
+
+        &__description{
+            max-width: 415px;
+            width: 100%;
+        }
+        .btn{
+            font-size: $font-xs;
+            padding: 5px 15px;
+            width:200px;
+        }
+    }
+}
